@@ -21,10 +21,13 @@
 /build
 
 # misc
-# misc
 .DS_Store
 *.pem
+.agents/
+.codex/
 PRODUCT.md
+design-system.md
+skills-lock.json
 move_files.js
 move_files.sh
 
