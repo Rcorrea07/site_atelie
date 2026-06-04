@@ -42,7 +42,7 @@ export function Hero() {
             className="text-wrap-balance break-words font-serif text-[clamp(2.85rem,7vw,5rem)] leading-[0.98] text-stone-800"
           >
             Costura criativa
-            <span className="block text-rose-400">com carinho de presente</span>
+            <span className="block text-rose-500">com carinho de presente</span>
           </h1>
 
           <p
