@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-atelier-bg: #fcfaf7;
+  --color-atelier-text: #3f3733;
+  --color-atelier-black: #1f1b18;
+  --color-atelier-pink: #d8749d;
+  --color-atelier-lightPink: #f5c6d8;
+  --color-atelier-green: #4f8b7a;
+
+  --font-sans: var(--font-roboto), sans-serif;
+  --font-serif: var(--font-caprasimo), serif;
+  --font-cursive: var(--font-dancing), cursive;
+  
+  --breakpoint-xl: 1300px;
+}
+
+body {
+  background-color: var(--color-atelier-bg);
+  color: var(--color-atelier-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; 
+}
