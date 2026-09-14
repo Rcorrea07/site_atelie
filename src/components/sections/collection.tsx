@@ -6,22 +6,7 @@ import { collection } from "@/data/collection";
    quebrar o ritmo claro do resto da página. */
 export function Collection() {
   return (
-    <section id="colecao" className="bg-atelier-ink">
-      <div className="mx-auto max-w-[1300px] px-6 pb-14 pt-28 sm:px-10 lg:pb-16 lg:pt-36">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end lg:gap-20">
-          <SectionHeading
-            index="04"
-            label="Coleções"
-            tone="dark"
-            title="Nenhuma sai igual à anterior."
-          />
-          <p className="max-w-[44ch] text-atelier-bg/60 lg:pb-3">
-            A estampa muda, o tamanho muda, o forro muda. O que se repete é o
-            acabamento.
-          </p>
-        </div>
-      </div>
-
+    <section id="colecao" className="bg-atelier-linen">
       <div className="h-[86vh] min-h-[520px] w-full">
         <ParallaxStripSlider
           slides={collection}
