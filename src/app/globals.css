@@ -1,28 +1,79 @@
 @import "tailwindcss";
 
 @theme {
-  --color-atelier-bg: #fcfaf7;
-  --color-atelier-text: #3f3733;
-  --color-atelier-black: #1f1b18;
+  /* --- Papel e tinta ------------------------------------------------ */
+  --color-atelier-bg: #fcfaf7;        /* fundo geral, off-white de papel */
+  --color-atelier-linen: #f4efe9;     /* faixa alternada, linho quente   */
+  --color-atelier-surface: #ffffff;
+  --color-atelier-ink: #1f1b18;       /* preto quente: títulos e seções escuras */
+  --color-atelier-text: #3f3733;      /* corpo de texto                  */
+  --color-atelier-muted: #8c8078;     /* rótulos, legendas, secundário   */
+  --color-atelier-line: #e6dfd6;      /* hairline: a única "borda" do site */
+
+  /* --- Acentos (usar com parcimônia) -------------------------------- */
   --color-atelier-pink: #d8749d;
+  --color-atelier-pinkDeep: #b85f87;
   --color-atelier-lightPink: #f5c6d8;
   --color-atelier-green: #4f8b7a;
 
-  --font-sans: var(--font-roboto), sans-serif;
-  --font-serif: var(--font-caprasimo), serif;
-  --font-cursive: var(--font-dancing), cursive;
-  
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono-label), ui-monospace, "SF Mono", monospace;
+
   --breakpoint-xl: 1300px;
+}
+
+/* Rótulo editorial: numeração de seção, legendas, metadados.
+   Equivalente ao .eyebrow do dossiê. A cor fica por conta de quem usa,
+   para que a mesma classe sirva em fundo claro e em fundo escuro. */
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Display serifado: sempre tracking negativo e entrelinha curta. */
+@utility display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  /* `clip` corta o transbordo lateral sem criar um contexto de scroll —
+     que é o que `hidden` faria, quebrando todo `position: sticky`. */
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--color-atelier-bg);
   color: var(--color-atelier-text);
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px; 
+::selection {
+  background-color: var(--color-atelier-lightPink);
+  color: var(--color-atelier-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-atelier-pink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
