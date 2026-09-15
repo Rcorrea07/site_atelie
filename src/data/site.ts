@@ -11,10 +11,11 @@ export const site = {
   facebook: null as string | null,
 };
 
+/* Na mesma ordem em que as seções aparecem em app/page.tsx. */
 export const nav = [
-  { label: "Ateliê", href: "#atelie" },
-  { label: "Peças", href: "#pecas" },
+  { label: "Coleções", href: "#colecao" },
   { label: "Catálogo", href: "#catalogo" },
+  { label: "Peças", href: "#pecas" },
   { label: "Encomenda", href: "#encomenda" },
   { label: "Contato", href: "#contato" },
 ];

@@ -1,5 +1,4 @@
 import ParallaxStripSlider from "@/components/ui/parallax-strip-slider";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { collection } from "@/data/collection";
 
 /* 04 — Galeria imersiva. Fundo escuro para as fotos respirarem e para

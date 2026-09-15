@@ -46,10 +46,11 @@ export function Hero() {
         </div>
 
         <figure className="relative">
+          {/* A foto é retrato (1191x1320): recipiente em 4:5 para não cortar. */}
           <div className="relative aspect-[4/5] w-full overflow-hidden bg-atelier-linen lg:aspect-auto lg:h-[70vh]">
             <Image
-              src="/img/bolsa_1.jpg"
-              alt="Bolsa em tecido cinza com alça estampada, feita no Ateliê Sy Corrêa"
+              src="/img/hero-praia.webp"
+              alt="Mulher de chapéu de palha sentada num balanço à beira-mar, com uma bolsa tote de alças de couro ao lado"
               fill
               priority
               sizes="(min-width: 1024px) 46vw, 92vw"
@@ -57,9 +58,9 @@ export function Hero() {
             />
           </div>
           <figcaption className="label mt-4 text-atelier-muted">
-            Bolsa de praia
+            Bolsa tote
             <span aria-hidden> · </span>
-            tecido estruturado
+            de manhã na praia
           </figcaption>
         </figure>
       </div>

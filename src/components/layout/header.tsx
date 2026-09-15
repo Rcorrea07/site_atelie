@@ -38,7 +38,7 @@ export function Header() {
         <div className="mx-auto flex h-[72px] max-w-[1300px] items-center justify-between gap-8 px-6 sm:px-10">
           <Link href="#home" aria-label={site.name} className="shrink-0">
             <Image
-              src="/img/principal rosa sem fundo.png"
+              src="/img/principal rosa sem fundo.webp"
               alt={site.name}
               width={435}
               height={145}

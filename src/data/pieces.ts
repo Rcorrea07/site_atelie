@@ -15,7 +15,7 @@ import type { StackSpreadCard } from "@/components/ui/stack-spread";
 export const pieces: StackSpreadCard[] = [
   // topo-esquerda — a marca
   {
-    item: { src: "/img/necessaire-transparente.webp", alt: "Máquina de costura do ateliê" },
+    item: { src: "/img/necessaire-transparente.webp", alt: "Necessaire transparente de dois andares com nécessaires claras dentro" },
     stackOffset: { x: -8, y: -10 },
     stackRotate: -18,
     target: { x: -20, y: -34, rotate: 0, scale: 0.75, w: 16, h: 24 },
@@ -42,7 +42,7 @@ export const pieces: StackSpreadCard[] = [
   },
   // topo-centro — a peça principal
   {
-    item: { src: "/img/conjunto-praia.webp", alt: "Bolsa em tecido cinza com alça estampada" },
+    item: { src: "/img/conjunto-praia.webp", alt: "Conjunto de praia em tecido waffle branco com detalhes azul-marinho" },
     stackOffset: { x: 1, y: -10 },
     stackRotate: -2,
     target: { x: 6, y: -32, rotate: 0, scale: 0.85, w: 20, h: 34 },
@@ -69,7 +69,7 @@ export const pieces: StackSpreadCard[] = [
   },
   // base-centro — embalagem
   {
-    item: { src: "/img/bolsa-vinho.webp", alt: "Etiqueta, adesivo e sacola do ateliê" },
+    item: { src: "/img/bolsa-vinho.webp", alt: "Bolsa de mão vinho em couro texturizado, com alça superior" },
     stackOffset: { x: 8, y: 7 },
     stackRotate: 3,
     target: { x: 2, y: 36, rotate: 0, scale: 0.8, w: 19, h: 28 },
@@ -78,7 +78,7 @@ export const pieces: StackSpreadCard[] = [
   },
   // base-direita — a mesa de corte
   {
-    item: { src: "/img/bolsa-rosa.webp", alt: "Mesa do ateliê com linhas, tesoura e tecidos" },
+    item: { src: "/img/bolsa-rosa.webp", alt: "Bolsa de viagem rosa com chaveiro pompom" },
     stackOffset: { x: 20, y: 12 },
     stackRotate: -7,
     target: { x: 30, y: 34, rotate: 0, scale: 0.9, w: 22, h: 17 },

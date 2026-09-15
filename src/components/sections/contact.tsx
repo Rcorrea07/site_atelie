@@ -49,7 +49,7 @@ export function Contact() {
               <figure>
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-atelier-linen">
                   <Image
-                    src="/img/6.png"
+                    src="/img/6.webp"
                     alt="Etiqueta, adesivo e sacola de papel do Ateliê Sy Corrêa"
                     fill
                     sizes="(min-width: 1024px) 44vw, 92vw"
